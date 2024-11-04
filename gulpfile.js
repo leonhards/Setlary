@@ -44,7 +44,7 @@ function css() {
 function javascript() {
     return src(jsSrc, {sourcemaps: true})
         .pipe(concat('setlary.js'))
-        .pipe(desc(jsDist))
+        .pipe(dest(jsDist))
         .pipe(uglify())
         .pipe(rename({extname: '.min.js'}))
         .pipe(dest(jsDist, {sourcemaps: '.'}));
