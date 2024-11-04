@@ -1,0 +1,8 @@
+.site-footer a {
+    $color: $color__light_gray;
+}
+
+.site-footer a:hover,
+.site-footer a:visited {
+    color: $color__light_blue;
+}

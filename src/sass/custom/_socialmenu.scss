@@ -1,0 +1,48 @@
+.menu-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-social ul li {
+    display: inline-block;
+}
+
+.menu-social li a::before {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0.625rem;
+    font-family: "Font Awesome 6 Brands", sans-serif;
+    color: $color__white;
+    -webkit-font-smoothing: antialiased;
+    width: 44px;
+    height: 44px;
+}
+
+.menu-social li a:hover {
+    opacity: .8;
+}
+
+.menu-social li a[href*="facebook.com"]::before {
+    content: "\f39e";
+    background: #3b5998;
+}
+
+.menu-social li a[href*="instagram.com"]::before {
+    content: "\f16d";
+    background: #517fa4;
+}
+
+.menu-social li a[href*="linkedin.com"]::before {
+    content: "\f0e1";
+    background: #0077b5;
+}
+
+.menu-social li a[href*="x.com"]::before {
+    content: "\f099";
+    background: #55acee;
+}
+
+.menu-social li a[href*="youtube.com"]::before {
+    content: "\f167";
+    background: #cd201f;
+}
