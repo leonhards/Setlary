@@ -120,10 +120,9 @@ if ( ! function_exists( 'setlary_setup' ) ) :
                 'image',
                 'link',
                 'status',
-                'chat',
+                'chat'
             )
-        )
-
+        );
     }
 
     add_action( 'after_setup_theme', 'setlary_setup' );
