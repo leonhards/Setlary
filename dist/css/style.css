@@ -22555,6 +22555,54 @@ input[type=submit] {
   transition: background 0.2s;
 }
 
+.btn-primary {
+  height: 55px;
+  min-width: 150px;
+  background: linear-gradient(90deg, #4bca9d 50%, #fff 0);
+  background-position: 0;
+  background-size: 200% auto;
+  border-color: #4bca9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.btn-primary:not(:disabled):hover {
+  background-position: 100%;
+  border-color: #4bca9d;
+  color: #4bca9d;
+}
+.btn-primary:visited {
+  color: #fff;
+}
+
+.btn-secondary {
+  height: 55px;
+  min-width: 150px;
+  background: linear-gradient(90deg, transparent 50%, #fff 0);
+  background-position: 0;
+  background-size: 200% auto;
+  border-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-secondary:not(:disabled):hover {
+  background-color: transparent;
+  background-position: 100%;
+  border-color: #fff;
+  color: #202529;
+}
+.btn-secondary:visited {
+  color: #fff;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
@@ -22881,4 +22929,153 @@ th {
 .site-footer a:hover,
 .site-footer a:visited {
   color: #4fabff;
+}
+
+header {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+header > *,
+header a:not(.dropdown-item):visited {
+  color: #fff;
+}
+
+header.bg-blue {
+  background: #283874;
+}
+
+.top-menu .site-welcome {
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.top-menu ul.nav li a,
+.top-menu .lang-option {
+  font-size: 14px;
+}
+
+.top-menu .site-welcome,
+.top-menu .lang-option {
+  align-self: center;
+}
+
+.top-menu {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.top-menu ul.nav li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.top-menu ul.nav li a:hover {
+  opacity: 0.75;
+}
+
+.top-menu ul.nav li a.active {
+  border-bottom: 3px solid #4bca9d;
+  opacity: 1;
+}
+
+.top-menu .lang-option {
+  margin-left: 16px;
+}
+
+.top-menu .lang-option ul {
+  inset: 0px 0px auto auto !important;
+}
+
+.top-menu .lang-option ul li a {
+  line-height: 40px;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.main-menu {
+  padding: 20px 60px;
+}
+
+.main-menu .nav-primary {
+  font-size: 16px;
+}
+
+.main-menu .nav-button {
+  margin-left: auto !important;
+}
+
+body {
+  font-family: "Lexend", sans-serif !important;
+}
+
+.hero-section {
+  background: url("dist/images/employer-banner-bg.png");
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  height: calc(100vh + 350px);
+  position: relative;
+  width: 100%;
+}
+
+.overlay-1 {
+  background: linear-gradient(160deg, #0f1a45 -15px, rgba(40, 56, 116, 0.2) 50%);
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.overlay-2 {
+  background: linear-gradient(210deg, #0f1a45 -50%, #2696d1, #7de8c3);
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  opacity: 0.41;
+  z-index: 11;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-section .container {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  max-height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 12;
+}
+
+.btn.min-w-300 {
+  min-width: 300px;
+}
+
+.btn.btn-hero {
+  font-size: 20px;
+  font-weight: 300;
+  height: 65px;
+}
+
+.btn.btn-hero .icon {
+  position: absolute;
+  right: 7px;
 }

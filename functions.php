@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Setlary functions and definitions
  *
@@ -7,13 +8,13 @@
  * @package Setlary
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit;
 }
 
-if ( ! defined( 'SETLARY_VERSION' ) ) {
+if (! defined('SETLARY_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( 'SETLARY_VERSION', '1.0.0' );
+	define('SETLARY_VERSION', '1.0.0');
 }
 
 // Setlary inc directory that holds the files to be included.
@@ -27,5 +28,5 @@ $setlary_includes = array(
 );
 
 foreach ($setlary_includes as $setlary_file) {
-	require_once get_theme_file_path( $setlary_inc_dir . $setlary_file );
+	require_once get_theme_file_path($setlary_inc_dir . $setlary_file);
 }

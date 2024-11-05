@@ -1,0 +1,74 @@
+body {
+	font-family: "Lexend", sans-serif !important;
+}
+
+.hero-section {
+	background: url("dist/images/employer-banner-bg.png");
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	height: calc(100vh + 350px);
+	position: relative;
+	width: 100%;
+}
+
+.overlay-1 {
+	background: linear-gradient(
+		160deg,
+		#0f1a45 -15px,
+		rgba(40, 56, 116, 0.2) 50%
+	);
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.overlay-2 {
+	background: linear-gradient(210deg, #0f1a45 -50%, #2696d1, #7de8c3);
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	opacity: 0.41;
+	z-index: 11;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.hero-section .container {
+	align-items: center;
+	bottom: 0;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	max-height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	z-index: 12;
+}
+
+.btn.min-w-300 {
+	min-width: 300px;
+}
+
+.btn.btn-hero {
+	font-size: 20px;
+	font-weight: 300;
+	height: 65px;
+}
+
+.btn.btn-hero .icon {
+	position: absolute;
+	right: 7px;
+}

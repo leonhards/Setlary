@@ -58,3 +58,7 @@ $fa-font-path: "webfonts" !default;
 @import "custom/tables";
 
 @import "custom/footer";
+
+// frontpage.php
+@import "custom/header-new";
+@import "custom/front-page";
