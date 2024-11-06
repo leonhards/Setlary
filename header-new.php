@@ -53,12 +53,12 @@
                         <ul class="dropdown-menu text-small">
                             <li>
                                 <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/english.svg" alt="English" width="25" class="rounded-circle"> English
+                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/english.svg" alt="English" width="25" class="rounded-circle me-2"> English
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle"> Indonesia
+                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle me-2"> Indonesia
                                 </a>
                             </li>
                         </ul>
@@ -68,7 +68,17 @@
 
             <div class="main-menu">
                 <div class="container d-flex flex-wrap align-items-center">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-v.svg" alt="Setlary"></a>
+                    <a href="#">
+                        <?php
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if (has_custom_logo()) {
+                            echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                        } else {
+                            echo '<img src="' . get_template_directory_uri() . '/dist/images/logo-v.svg" alt="Setlary">';
+                        }
+                        ?>
+                    </a>
                     <nav class="nav">
                         <?php
                         wp_nav_menu(

@@ -46,7 +46,7 @@ get_header('new');
     <!-- Video Section -->
     <div class="video-section">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row h-100">
                 <div class="col video-section-bg p-0">
                     <div class="overlay"></div>
                     <div class="overlay-button">

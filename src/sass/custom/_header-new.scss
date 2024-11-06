@@ -42,6 +42,7 @@ header.bg-blue {
 	padding-bottom: 15px;
 	font-weight: 600;
 	opacity: 0.5;
+	color: #fff;
 
 	&:hover {
 		opacity: 0.75;
@@ -55,6 +56,10 @@ header.bg-blue {
 
 .top-menu .lang-option {
 	margin-left: 16px;
+}
+
+.top-menu .lang-option > a {
+	color: #fff;
 }
 
 .top-menu .lang-option ul {
@@ -71,8 +76,12 @@ header.bg-blue {
 	padding: 20px 60px;
 }
 
-.main-menu .nav-primary {
+.main-menu ul.nav-primary {
 	font-size: 16px;
+}
+
+.main-menu ul.nav-primary li a {
+	color: #fff;
 }
 
 .main-menu .nav-button {
