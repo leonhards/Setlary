@@ -15,8 +15,9 @@ header.bg-blue {
 	background: #283874;
 }
 
-.top-menu .site-welcome {
+.top-menu .site-description {
 	font-size: 12px;
+	font-weight: 100;
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -27,7 +28,7 @@ header.bg-blue {
 	font-size: 14px;
 }
 
-.top-menu .site-welcome,
+.top-menu .site-description,
 .top-menu .lang-option {
 	align-self: center;
 }

@@ -28,11 +28,15 @@
         <header id="masthead" class="site-header w-100">
             <div class="top-menu d-flex flex-wrap">
                 <div class="container d-flex flex-wrap">
-                    <div class="site-welcome me-auto">
+                    <div class="site-description me-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" data-v-0611ee48="">
                             <circle id="Ellipse_1" data-name="Ellipse 1" cx="5.5" cy="5.5" r="5.5" fill="#4bca9d" data-v-0611ee48=""></circle>
                         </svg>
-                        Selamat datang di Setlary, penyedia solusi keuangan dinamis dan inovatif yang menawarkan akses gaji yang lebih fleksibel.
+                        <?php
+                        $site_description_default = "Selamat datang di Setlary, penyedia solusi keuangan dinamis dan inovatif yang menawarkan akses gaji yang lebih fleksibel.";
+                        $site_description = (get_bloginfo('description')  !== '') ? get_bloginfo('description') : $site_description_default;
+                        echo $site_description;
+                        ?>
                     </div>
                     <ul class="nav">
                         <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
