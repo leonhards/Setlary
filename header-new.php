@@ -26,11 +26,11 @@
     <?php wp_body_open(); ?>
     <div id="page" class="site">
         <header id="masthead" class="site-header w-100">
-            <div class="top-menu d-flex flex-wrap">
+            <div class="top-menu">
                 <div class="container d-flex flex-wrap">
                     <div class="site-description me-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" data-v-0611ee48="">
-                            <circle id="Ellipse_1" data-name="Ellipse 1" cx="5.5" cy="5.5" r="5.5" fill="#4bca9d" data-v-0611ee48=""></circle>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                            <circle id="Ellipse_1" data-name="Ellipse 1" cx="5.5" cy="5.5" r="5.5" fill="#4bca9d"></circle>
                         </svg>
                         <?php
                         $site_description_default = "Selamat datang di Setlary, penyedia solusi keuangan dinamis dan inovatif yang menawarkan akses gaji yang lebih fleksibel.";
@@ -38,30 +38,33 @@
                         echo $site_description;
                         ?>
                     </div>
-                    <ul class="nav">
-                        <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                            <a href="#" class="nav-link active">Solusi Perusahaan</a>
-                        </li>
-                        <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                            <a href="#" class="nav-link">Solusi Karyawan</a>
-                        </li>
-                    </ul>
-                    <div class="dropdown lang-option">
-                        <a href="#" class="d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle"> Indonesia
-                        </a>
-                        <ul class="dropdown-menu text-small">
-                            <li>
-                                <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/english.svg" alt="English" width="25" class="rounded-circle me-2"> English
-                                </a>
+                    <div class="top-menu-right">
+                        <ul class="nav">
+                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                                <a href="#" class="nav-link active">Solusi Perusahaan</a>
                             </li>
-                            <li>
-                                <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle me-2"> Indonesia
-                                </a>
+                            <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                                <a href="#" class="nav-link">Solusi Karyawan</a>
                             </li>
                         </ul>
+                        <div class="dropdown lang-option">
+                            <a href="#" class="d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle"> Indonesia
+
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/english.svg" alt="English" width="25" class="rounded-circle me-2"> English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/indonesia.svg" alt="Indonesia" width="25" class="rounded-circle me-2"> Indonesia
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ get_header('new');
         <div class="overlay-1"></div>
         <div class="overlay-2"></div>
         <div class="container vh-100">
-            <h1 class="display-5 fw-normal">Transformasi Finansial Perusahaan, Optimalisasi Produktivitas Karyawan</h1>
+            <h1 class="title">Transformasi Finansial Perusahaan, Optimalisasi Produktivitas Karyawan</h1>
             <div class="col-lg-8 mx-auto">
                 <p class="lead my-5">Masuki era baru penggajian dengan akses gaji lebih awal, limit kredit tinggi, dan diskon tunai yang menghemat biaya operasional perusahaan.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
